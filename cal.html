@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: rgb(85, 85, 212);
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;
+            height: 400px;
+            align-content: end;
+
+        }
+        .item, .zero{
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .zero{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .scrn{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: white;
+            text-align: right;
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="scrn">0</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">+</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">-</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">+</div>
+        <div class="zero">0</div>
+        <div class="item">=</div>
+        <div class="item">/</div>
+    </div>
+</body>
+</html>
